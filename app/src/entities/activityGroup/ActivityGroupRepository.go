@@ -4,6 +4,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// untuk repository / fungsi apa saja yang akan kita gunakan
 type ActivityGroupRepository interface {
 	FindAll() []ActivityGroupModel
 	FindOne(id int) ActivityGroupModel

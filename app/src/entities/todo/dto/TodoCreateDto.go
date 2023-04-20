@@ -1,5 +1,6 @@
 package todo
 
+// untuk melakukan penambahan data todo
 type TodoCreateDto struct {
 	Id              int64  `json:"id"`
 	Title           string `json:"title"  validate:"required"`

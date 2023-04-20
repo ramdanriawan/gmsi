@@ -11,6 +11,7 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
+// untuk menggunakan repository / fungsi apa saja yang akan kita gunakan
 type ActivityGroupService interface {
 	GetAll() []ActivityGroupModel
 	GetByID(id int) ActivityGroupModel

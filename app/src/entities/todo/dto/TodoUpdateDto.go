@@ -1,5 +1,6 @@
 package todo
 
+// untuk mengupdate data todo
 type TodoUpdateDto struct {
 	Id    int64  `json:"id"`
 	Title string `json:"title" `

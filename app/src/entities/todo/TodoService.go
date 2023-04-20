@@ -11,6 +11,8 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
+
+// untuk menggunakan repository
 type TodoService interface {
 	GetAll(activityGroupId int) []TodoModel
 	GetByID(id int64) TodoModel

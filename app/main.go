@@ -11,9 +11,11 @@ import (
 func main() {
 	r := gin.Default()
 
+	// konfigurasi database
 	db := config.DB()
 
 	route.Api(r, db)
-
+	
+	// port akan berjalan di 3030
 	r.Run(":3030")
 }

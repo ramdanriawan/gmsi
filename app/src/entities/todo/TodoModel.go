@@ -2,6 +2,7 @@ package todo
 
 import "time"
 
+// untuk model data todo
 type TodoModel struct {
 	Id              int64     `json:"id" gorm:"primaryKey;auto_increment:true;index"`
 	Title           string    `json:"title" gorm:"type:varchar(100)"`

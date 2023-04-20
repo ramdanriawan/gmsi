@@ -5,6 +5,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// untuk melist fungsi apa saja yang akan kita gunakan di repository
 type TodoRepository interface {
 	FindAll(activityGroupId int) []TodoModel
 	FindOne(id int64) TodoModel

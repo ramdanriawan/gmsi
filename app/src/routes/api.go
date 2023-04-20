@@ -15,6 +15,7 @@ var (
 	todoRepositoryImpl todo.TodoRepositoryImpl
 )
 
+// untuk membuat api di golang
 func Api(router *gin.Engine, db *gorm.DB) {
 	todoRepository := todo.NewTodoRepository(db)
 	todoService := todo.NewTodoService(todoRepository)
@@ -24,6 +25,7 @@ func Api(router *gin.Engine, db *gorm.DB) {
 	activityGroupService := activityGroup.NewActivityGroupService(activityGroupRepository)
 	activityGroupController := controllers.NewActivityGroupController(activityGroupService, todoService, todoRepository, todoRepositoryImpl, ctx)
 
+	// membuat api versi 1 di golang
 	v1 := router.Group("/")
 	{
 

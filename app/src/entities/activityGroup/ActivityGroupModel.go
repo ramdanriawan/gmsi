@@ -2,6 +2,7 @@ package activityGroup
 
 import "time"
 
+// untuk model activity group
 type ActivityGroupModel struct {
 	Id        int64     `json:"id" gorm:"primaryKey;auto_increment:true;index"`
 	Title     string    `json:"title" gorm:"type:varchar(100)"`
